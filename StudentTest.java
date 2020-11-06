@@ -1,8 +1,9 @@
 package StudentObject;
 import java.util.Scanner;
-import java.io.*;
+
 public class StudentTest {
-    public static void main(String [] args) throws IOException {
+    public static void main(String [] args) 
+    {
         //String fname;
         //String lname;
         //String sTime;
@@ -12,13 +13,6 @@ public class StudentTest {
         Student stu = new Student();
 
         //Student temp = new Student();
-
-
-        File SampleRecord = new File("src/StudentObject/sampRecord");
-        Scanner sr = new Scanner(SampleRecord);
-
-        PrintWriter Record = new PrintWriter("RecordStu.txt");
-
 
 
         while (sr.hasNext()){
@@ -37,6 +31,7 @@ public class StudentTest {
         System.out.println("Enter 'R' if you are a NYC resident:" +
                 "\t Enter 'N' if you are out of state resident: ");
         stu.setStatus(in.next().charAt(0));
+        
         if (stu.isRes() == true){
             System.out.println("You are a resident of NYC.\t Are you a full time or part time student?\nEnter 'full' or 'part' to indicate: ");
             stu.StudentTime= in.next();
