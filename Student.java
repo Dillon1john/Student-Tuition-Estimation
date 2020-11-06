@@ -8,7 +8,7 @@ public class Student {
     int credit;
     String StudentTime;
     int Tuition;
-   Student (){  }
+   Student (){  } //constructor
 
     Student (String fname ,String lname,int id, char stat, int c, String sTime) {
         fname= FirstName;
